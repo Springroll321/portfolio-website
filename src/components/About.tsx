@@ -9,9 +9,9 @@ const slides = [
     title: "Who I Am",
     description: "I'm Patrick, a recently graduated student with a passion for creating new things, whether it's a project that is tangible or written in code. I enjoy solving complex problems and the process of bringing ideas to life. I graduated in 2025 with a major in Computer Science from the University of Manitoba. I was born and raised in the tropical weather of the Philippines and later moved to Winnipeg, Manitoba in 2009 with my family. Altough we have been in Canada for quite some time now, we're still learning how to survive the cold winters.",
     images: [
-      "/images/about me/who/manila.webp",
-      "/images/about me/who/uofm.webp",
-      "/images/about me/who/winter.webp"
+      "/images/about-me/who/manila.webp",
+      "/images/about-me/who/uofm.webp",
+      "/images/about-me/who/winter.webp"
     ]
   },
   {
@@ -19,9 +19,9 @@ const slides = [
     title: "Maker 🔨",
     description: "I am passionate about making things either through traditional crafts like woodworking and crocheting, or through digital creations such as 3D modeling and coding. I enjoy the mix of creativity, problem-solving, and experimentation that comes with any project.",
     images: [
-      "/images/about me/maker/crochet.webp",
-      "/images/about me/maker/flower.webp",
-      "/images/about me/maker/sword.webp"
+      "/images/about-me/maker/crochet.webp",
+      "/images/about-me/maker/flower.webp",
+      "/images/about-me/maker/sword.webp"
     ]
   },
   {
@@ -29,9 +29,9 @@ const slides = [
     title: "Gaming 🎮",
     description: "Ever since I built my first computer, gaming has been one of my favorite ways to unwind during my free time. I mostly enjoy playing games with friends in competitive settings like NBA 2K, Valorant, and CSGO. The single player games that I have enjoyed are Soulsborne games like Dark Souls, Elden Ring and Sekiro.",
     images: [
-      "/images/about me/gaming/omen.webp",
-      "/images/about me/gaming/pc.webp",
-      "/images/about me/gaming/rellana.webp"
+      "/images/about-me/gaming/omen.webp",
+      "/images/about-me/gaming/pc.webp",
+      "/images/about-me/gaming/rellana.webp"
     ]
   },
   {
@@ -39,9 +39,9 @@ const slides = [
     title: "Sports 🏀",
     description: "I’m adamant about staying active, whether it's playing basketball, hiking, or swimming. I've been playing basketball ever since I was a kid and it remains one of my favorite ways to stay active and have fun with friends. My favorite NBA teams to watch are currently the Los Angeles Lakers and previously the Chicago Bulls during the Derrick Rose era. More recently I have enjoyed solving boulder problems as it picks my brain while giving me a good workout",
     images: [
-      "/images/about me/sports/cllimb.webp",
-      "/images/about me/sports/drose.webp",
-      "/images/about me/sports/swimming.webp"
+      "/images/about-me/sports/cllimb.webp",
+      "/images/about-me/sports/drose.webp",
+      "/images/about-me/sports/swimming.webp"
     ]
   },
   {
@@ -49,12 +49,12 @@ const slides = [
     title: "Exploring 🏞️",
     description: "I love exploring new places, whether it's hiking through nature trails, visiting historical sites, or discovering hidden gems in cities. Exploring allows me to experience different cultures, appreciate the beauty of the world, and create lasting memories. I had the privelage to travel to various places including Canada, the Philippines, the United States, Mexico, and the Carribean.",
     images: [
-      "/images/about me/exploring/banff.webp",
-      "/images/about me/exploring/bridge.webp",
-      "/images/about me/exploring/church.webp",
-      "/images/about me/exploring/msc.webp",
-      "/images/about me/exploring/para.webp",
-      "/images/about me/exploring/pyramid.webp"
+      "/images/about-me/exploring/banff.webp",
+      "/images/about-me/exploring/bridge.webp",
+      "/images/about-me/exploring/church.webp",
+      "/images/about-me/exploring/msc.webp",
+      "/images/about-me/exploring/para.webp",
+      "/images/about-me/exploring/pyramid.webp"
     ]
   },
 ];
