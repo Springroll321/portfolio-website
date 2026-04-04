@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-totoro-grey: #8e8e8e;
+  --color-totoro-tan: #d2b48c;
+  --color-totoro-white: #f5f5dc;
+  --color-totoro-belly: #fdf5e6;
+  --color-forest-dark: #1a2f23;
+  --color-forest-mid: #2d4a3e;
+  --color-forest-light: #4a7c59;
+  --color-meadow-green: #8fcb9b;
+  --color-cream: #f9f7f2;
+  --color-sky-blue: #e0f2f1;
+  --color-glow-yellow: #fff9c4;
+  --color-bus-stop-red: #e57373;
+  --color-umbrella-yellow: #ffd54f;
+  --color-night-blue: #2c3e50;
+  --color-spirit-purple: #9575cd;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-forest-dark font-body antialiased selection:bg-meadow-green selection:text-forest-dark;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans tracking-tight;
+  }
+}
+
+.glass-morphism {
+  @apply bg-white/40 backdrop-blur-md border border-white/20;
+}
+
+.ghibli-gradient {
+  background: linear-gradient(135deg, var(--color-sky-blue) 0%, var(--color-cream) 50%, var(--color-meadow-green) 100%);
+}
+
+.forest-path {
+  position: relative;
+}
+
+.forest-path::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--color-forest-light), transparent);
+  transform: translateX(-50%);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.leaf-particle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
