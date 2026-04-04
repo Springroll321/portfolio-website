@@ -7,7 +7,7 @@ const slides = [
   {
     id: 1,
     title: "Who I Am",
-    description: "I'm Patrick, a recently graduated student with a passion for creating new things, whether it's a project that is tangible or written in code. I enjoy solving complex problems and the process of bringing ideas to life. I graduated in 2025 with a major in Computer Science from the University of Manitoba. I was born and raised in the tropical weather of the Philippines and later moved to Winnipeg, Manitoba in 2009 with my family. Altough we have been in Canada for quite some time now, we're still learning how to survive the cold winters.",
+    description: "I'm Patrick, a recently graduated student with a passion for creating new things, whether it's a project that is tangible or written in code. I enjoy solving complex problems and the process of bringing ideas to life. I graduated in 2025 with a major in Computer Science from the University of Manitoba. I was born and raised in the tropical weather of the Philippines and later moved to Winnipeg, Manitoba in 2009 with my family. Although we have been in Canada for quite some time now, we're still learning how to survive the cold winters.",
     images: [
       "/images/about-me/who/manila.webp",
       "/images/about-me/who/uofm.webp",
@@ -47,7 +47,7 @@ const slides = [
   {
     id: 5,
     title: "Exploring 🏞️",
-    description: "I love exploring new places, whether it's hiking through nature trails, visiting historical sites, or discovering hidden gems in cities. Exploring allows me to experience different cultures, appreciate the beauty of the world, and create lasting memories. I had the privelage to travel to various places including Canada, the Philippines, the United States, Mexico, and the Carribean.",
+    description: "I love exploring new places, whether it's hiking through nature trails, visiting historical sites, or discovering hidden gems in cities. Exploring allows me to experience different cultures, appreciate the beauty of the world, and create lasting memories. I had the privilege to travel to various places including Canada, the Philippines, the United States, Mexico, and the Caribbean.",
     images: [
       "/images/about-me/exploring/banff.webp",
       "/images/about-me/exploring/bridge.webp",
