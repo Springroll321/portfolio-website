@@ -28,7 +28,6 @@ export const Hero = () => {
                 src="/images/hero/pe4-5.webp" 
                 alt="Portrait" 
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
             </div>
           </div>
