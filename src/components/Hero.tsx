@@ -25,7 +25,7 @@ export const Hero = () => {
             {/* Body Frame */}
             <div className="absolute bottom-0 w-full h-[85%] rounded-[50%_50%_45%_45%_/_60%_60%_40%_40%] overflow-hidden shadow-2xl border-4 border-totoro-grey bg-totoro-grey z-10">
               <img 
-                src="/images/hero/pe4-5.webp" 
+                src="/assets/hero/pe4-5.jpg" 
                 alt="Portrait" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
