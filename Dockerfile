@@ -9,7 +9,8 @@ RUN npm install
 
 # Copy source code and build the app
 COPY . .
-RUN npm run build
+# Ensure public folder is present and build
+RUN ls -la public && npm run build
 
 # Stage 2: Serve
 FROM nginx:alpine
