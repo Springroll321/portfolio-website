@@ -11,23 +11,19 @@
           if (!window.crypto) window.crypto = {};
           if (!window.crypto.randomUUID) {
             window.crypto.randomUUID = function() {
-              return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-                return v.toString(16);
+              return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, function(c) {
+                var cryptoObj = window.crypto || window.msCrypto;
+                var rnd = (cryptoObj && cryptoObj.getRandomValues) 
+                  ? cryptoObj.getRandomValues(new Uint8Array(1))[0]
+                  : Math.floor(Math.random() * 256);
+                return (c ^ rnd & 15 >> c / 4).toString(16);
               });
             };
           }
         } catch (e) {
-          console.error("Crypto polyfill failed", e);
+          console.warn("Crypto polyfill failed, but attempting to continue...", e);
         }
       })();
-
-      // Global image error logger to help debug broken paths
-      window.addEventListener('error', function(e) {
-        if (e.target.tagName === 'IMG') {
-          console.error('Image failed to load:', e.target.src);
-        }
-      }, true);
     </script>
   </head>
   <body>
