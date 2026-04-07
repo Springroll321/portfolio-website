@@ -20,6 +20,9 @@ COPY --from=build /app/dist /usr/share/nginx/html
 # Copy a custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+# Ensure the web server has read permissions for the assets
+RUN chmod -R 755 /usr/share/nginx/html/assets
+
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
