@@ -94,7 +94,7 @@ export const About = () => {
             className="grid md:grid-cols-2 gap-16 items-center min-h-[500px]"
           >
             <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-totoro-grey relative">
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative">
                 <AnimatePresence mode="wait">
                   <motion.img 
                     key={`${currentSlide}-${currentImage}`}
@@ -105,6 +105,7 @@ export const About = () => {
                     exit={{ opacity: 0, scale: 0.95 }}
                     transition={{ duration: 0.8 }}
                     className="absolute inset-0 w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
                   />
                 </AnimatePresence>
               </div>

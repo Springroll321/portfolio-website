@@ -19,15 +19,16 @@ export const Hero = () => {
         >
           <div className="relative w-48 h-60 mx-auto">
             {/* Ears */}
-            <div className="absolute top-0 left-[25%] w-[15%] h-[25%] bg-totoro-grey rounded-t-full -rotate-[15deg] border-t-4 border-l-4 border-forest-light/5" />
-            <div className="absolute top-0 right-[25%] w-[15%] h-[25%] bg-totoro-grey rounded-t-full rotate-[15deg] border-t-4 border-r-4 border-forest-light/5" />
+            <div className="absolute top-0 left-[25%] w-[15%] h-[25%] bg-totoro-grey rounded-t-full -rotate-[15deg]" />
+            <div className="absolute top-0 right-[25%] w-[15%] h-[25%] bg-totoro-grey rounded-t-full rotate-[15deg]" />
             
             {/* Body Frame */}
-            <div className="absolute bottom-0 w-full h-[85%] rounded-[50%_50%_45%_45%_/_60%_60%_40%_40%] overflow-hidden shadow-2xl border-4 border-totoro-grey bg-totoro-grey z-10">
+            <div className="absolute bottom-0 w-full h-[85%] rounded-[50%_50%_45%_45%_/_60%_60%_40%_40%] overflow-hidden shadow-2xl bg-totoro-grey z-10">
               <img 
                 src="/images/hero/pe4-5.webp" 
                 alt="Portrait" 
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>

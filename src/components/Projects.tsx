@@ -68,13 +68,14 @@ const ProjectCard = React.memo(({ project }: { project: Project }) => {
   return (
     <motion.div
       whileHover={projectLink ? { y: -10 } : {}}
-      className={`group relative bg-white rounded-3xl overflow-hidden shadow-xl shadow-forest-dark/5 border border-forest-light/10 will-change-transform h-full flex flex-col ${projectLink ? 'cursor-pointer' : ''}`}
+      className={`group relative bg-white rounded-3xl overflow-hidden shadow-xl shadow-forest-dark/5 will-change-transform h-full flex flex-col ${projectLink ? 'cursor-pointer' : ''}`}
     >
       <div className="aspect-[16/10] overflow-hidden relative">
         <img 
           src={project.image} 
           alt={project.title}
           className={`w-full h-full object-cover transition-transform duration-700 ${projectLink ? 'group-hover:scale-110' : ''}`}
+          referrerPolicy="no-referrer"
           loading="lazy"
           decoding="async"
         />
@@ -164,7 +165,7 @@ export const Projects = () => {
         <div className="flex items-center justify-center gap-6 mt-8">
           <button
             onClick={prev}
-            className="p-2 rounded-full bg-white shadow-md text-forest-dark hover:text-forest-light transition-all hover:scale-110 active:scale-95 border border-forest-light/10"
+            className="p-2 rounded-full bg-white shadow-md text-forest-dark hover:text-forest-light transition-all hover:scale-110 active:scale-95"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -183,7 +184,7 @@ export const Projects = () => {
 
           <button
             onClick={next}
-            className="p-2 rounded-full bg-white shadow-md text-forest-dark hover:text-forest-light transition-all hover:scale-110 active:scale-95 border border-forest-light/10"
+            className="p-2 rounded-full bg-white shadow-md text-forest-dark hover:text-forest-light transition-all hover:scale-110 active:scale-95"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
