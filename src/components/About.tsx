@@ -94,23 +94,18 @@ export const About = () => {
             className="grid md:grid-cols-2 gap-16 items-center min-h-[500px]"
           >
             <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-totoro-grey relative">
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative">
                 <AnimatePresence mode="wait">
-                    <motion.img 
+                  <motion.img 
                     key={`${currentSlide}-${currentImage}`}
-                    src={`${slides[currentSlide].images[currentImage]}?v=${Date.now()}`} 
+                    src={slides[currentSlide].images[currentImage]} 
                     alt={slides[currentSlide].title} 
                     initial={{ opacity: 0, scale: 1.1 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.95 }}
                     transition={{ duration: 0.8 }}
                     className="absolute inset-0 w-full h-full object-cover"
-                    onError={(e) => {
-                      console.error(`Failed to load image: ${slides[currentSlide].images[currentImage]}`);
-                      const target = e.target as HTMLImageElement;
-                      target.style.border = '4px solid red';
-                      target.style.backgroundColor = 'rgba(255,0,0,0.1)';
-                    }}
+                    referrerPolicy="no-referrer"
                   />
                 </AnimatePresence>
               </div>
