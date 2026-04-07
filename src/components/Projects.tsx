@@ -8,55 +8,55 @@ const projects: Project[] = [
   {
     title: "Portfolio Website",
     description: "Personal portfolio website to showcase my projects, skills and background.",
-    image: "/assets/projects/website.png",
+    image: "assets/projects/website.png",
     tags: ["TypeScript", "Docker", "React", "Amazon EC2", "TailwindCSS", "Vite", "Gemini"],
     demo: "https://patricktech.site/"
   },
   {
     title: "Magic Budget",
     description: "The project aims to create a comprehensive and user-friendly family budgeting and expense management application.",
-    image: "/assets/projects/magic.png",
+    image: "assets/projects/magic.png",
     tags: ["TypeScript", "Docker", "React", "Node.js", "TailwindCSS"],
     github: "https://github.com/Magic-Budget"
   },
   {
     title: "Tidy Trader",
     description: "Web application prototype for scheduling chores for households. Users can earn coins by completing chores and assigning them to other household members.",
-    image: "/assets/projects/tidytrader.png",
+    image: "assets/projects/tidytrader.png",
     tags: ["CSS", "HTML", "JavaScript", "Figma", "TailwindCSS"],
     demo: "https://canva.link/aaicp65ign6x4aq"
   },
   {
     title: "Collision Database",
     description: "Created a relational database from Montgomery County collision datasets, with a Java command-line interface for querying and analyzing data, improving accessibility and insights.",
-    image: "/assets/projects/collision.png",
+    image: "assets/projects/collision.png",
     tags: ["Java", "Microsoft SQL", "Figma"]
   },
   {
     title: "Vloggo Bot",
     description: "A personal vlog coordinator that keeps track of everyone in the rotation and pings the next member when it’s their time to vlog.",
-    image: "/assets/projects/vloggo.jpg",
+    image: "assets/projects/vloggo.jpg",
     tags: ["Python", "Docker", "Amazon EC2"],
     github: "https://github.com/Springroll321/vloggo-bot"
   },
   {
     title: "Simpli Cook",
     description: "This project involved building a recipe application in Android Studio using Java and HSQLDB.",
-    image: "/assets/projects/simply.png",
+    image: "assets/projects/simply.png",
     tags: ["Java", "Android Studio", "HSQLDB"],
     demo: "https://www.youtube.com/watch?v=7EQtmTFx1Fo"
   },
   {
     title: "Retro Music Library",
     description: "A prototype of a digital music library designed to apply Human–Computer Interaction (HCI) principles and evaluate usability through user testing.",
-    image: "/assets/projects/retro.png",
+    image: "assets/projects/retro.png",
     tags: ["JavaScript", "TailwindCSS", "CSS", "HTML"],
     github: "https://github.com/JordonH03/COMP3020-Group12"
   },
   {
     title: "Impossiball",
     description: "A two-player soccer game with various power-ups to make the game more chaotic.",
-    image: "/assets/projects/imposiball.png",
+    image: "assets/projects/imposiball.png",
     tags: ["Greenfoot", "Java"],
     github: "https://github.com/Springroll321/soccer_game"
   }
