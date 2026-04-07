@@ -9,13 +9,17 @@ RUN npm install
 
 # Copy source code and build the app
 COPY . .
-RUN npm run build
+# Ensure public folder is present and build
+RUN ls -la public && npm run build
 
 # Stage 2: Serve
 FROM nginx:alpine
 
 # Copy the build output from the previous stage
 COPY --from=build /app/dist /usr/share/nginx/html
+
+# Ensure Nginx can read the files
+RUN chmod -R 755 /usr/share/nginx/html
 
 # Copy a custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf

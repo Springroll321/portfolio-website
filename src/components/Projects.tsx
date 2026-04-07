@@ -72,12 +72,16 @@ const ProjectCard = React.memo(({ project }: { project: Project }) => {
     >
       <div className="aspect-[16/10] overflow-hidden relative">
         <img 
-          src={project.image} 
+          src={`${project.image}?v=${Date.now()}`} 
           alt={project.title}
           className={`w-full h-full object-cover transition-transform duration-700 ${projectLink ? 'group-hover:scale-110' : ''}`}
-          referrerPolicy="no-referrer"
           loading="lazy"
           decoding="async"
+          onError={(e) => {
+            console.error(`Failed to load project image: ${project.image}`);
+            const target = e.target as HTMLImageElement;
+            target.style.border = '4px solid red';
+          }}
         />
         {projectLink && <div className="absolute inset-0 bg-totoro-grey/20 group-hover:bg-totoro-grey/0 transition-colors duration-500" />}
       </div>
