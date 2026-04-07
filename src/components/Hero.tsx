@@ -17,32 +17,18 @@ export const Hero = () => {
           transition={{ duration: 1 }}
           className="mb-12 inline-block"
         >
-          <div className="flex flex-col items-center gap-4">
-            <div className="relative w-48 h-60 mx-auto">
-              {/* Ears */}
-              <div className="absolute top-0 left-[25%] w-[15%] h-[25%] bg-totoro-grey rounded-t-full -rotate-[15deg] border-t-4 border-l-4 border-forest-light/5" />
-              <div className="absolute top-0 right-[25%] w-[15%] h-[25%] bg-totoro-grey rounded-t-full rotate-[15deg] border-t-4 border-r-4 border-forest-light/5" />
-              
-              {/* Body Frame */}
-              <div className="absolute bottom-0 w-full h-[85%] rounded-[50%_50%_45%_45%_/_60%_60%_40%_40%] overflow-hidden shadow-2xl border-4 border-totoro-grey bg-totoro-grey z-10">
-                <img 
-                  src={`/images/hero/pe4-5.webp?v=${Date.now()}`} 
-                  alt="Portrait" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    console.error("Failed to load hero image");
-                    const target = e.target as HTMLImageElement;
-                    target.style.border = '4px solid red';
-                  }}
-                />
-              </div>
-            </div>
-            <div className="text-xs text-forest-dark/40">
-              Test Image (CDN): 
+          <div className="relative w-48 h-60 mx-auto">
+            {/* Ears */}
+            <div className="absolute top-0 left-[25%] w-[15%] h-[25%] bg-totoro-grey rounded-t-full -rotate-[15deg] border-t-4 border-l-4 border-forest-light/5" />
+            <div className="absolute top-0 right-[25%] w-[15%] h-[25%] bg-totoro-grey rounded-t-full rotate-[15deg] border-t-4 border-r-4 border-forest-light/5" />
+            
+            {/* Body Frame */}
+            <div className="absolute bottom-0 w-full h-[85%] rounded-[50%_50%_45%_45%_/_60%_60%_40%_40%] overflow-hidden shadow-2xl border-4 border-totoro-grey bg-totoro-grey z-10">
               <img 
-                src="https://picsum.photos/seed/test/100/100" 
-                alt="Test" 
-                className="inline-block ml-2 w-8 h-8 rounded-full border border-forest-light/20" 
+                src="/images/hero/pe4-5.webp" 
+                alt="Portrait" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
