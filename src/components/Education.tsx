@@ -13,7 +13,7 @@ const EducationItem = ({ degree, school, period, location, description, index }:
   >
     <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-meadow-green border-4 border-totoro-white shadow-sm" />
     
-    <div className="bg-white p-8 rounded-3xl shadow-xl shadow-forest-dark/5 border border-forest-light/10 hover:border-meadow-green/30 transition-colors">
+    <div className="bg-white p-8 rounded-3xl shadow-xl shadow-forest-dark/5 hover:border-meadow-green/30 transition-colors">
       <div className="flex flex-wrap justify-between items-start gap-4 mb-4">
         <div>
           <h3 className="text-xl font-sans font-bold text-forest-dark">{degree}</h3>
