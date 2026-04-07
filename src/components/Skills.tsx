@@ -27,7 +27,7 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, skills, index }) =
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className={`p-8 rounded-3xl shadow-xl shadow-forest-dark/5 ${bgColors[index % bgColors.length]}`}
+      className={`p-8 rounded-3xl shadow-xl shadow-forest-dark/5 border ${bgColors[index % bgColors.length]}`}
     >
       <div className="flex items-center gap-3 mb-6">
         <div className={`p-2 rounded-lg ${iconColors[index % iconColors.length]}`}>
