@@ -17,6 +17,9 @@ FROM caddy:2-alpine
 # Copy the build output from the previous stage
 COPY --from=build /app/dist /usr/share/caddy
 
+# Ensure the web server has read permissions for the assets
+RUN chmod -R 755 /usr/share/caddy
+
 # Copy the Caddyfile
 COPY Caddyfile /etc/caddy/Caddyfile
 
