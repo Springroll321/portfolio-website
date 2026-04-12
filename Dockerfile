@@ -1,5 +1,5 @@
-# Stage 1: Build the React/Vite app
-FROM node:20-alpine AS builder   
+# Stage 1: Build
+FROM node:20-slim AS build
 
 WORKDIR /app
 
@@ -7,23 +7,21 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the project and build
+# Copy source code and build the app
 COPY . .
 RUN npm run build
 
-# Stage 2: Serve with Caddy
-FROM caddy:latest
+# Stage 2: Serve
+FROM caddy:2-alpine
 
-# Copy the production build from the previous stage
-COPY --from=builder /app/dist /usr/share/caddy
+# Copy the build output from the previous stage
+COPY --from=build /app/dist /usr/share/caddy
 
-# Minimal Caddyfile to automatically get HTTPS
-# Copy Caddyfile into container
+# Ensure the web server has read permissions for the assets
+RUN chmod -R 755 /usr/share/caddy
+
+# Copy the Caddyfile
 COPY Caddyfile /etc/caddy/Caddyfile
 
-# Expose HTTP and HTTPS
 EXPOSE 80
 EXPOSE 443
-
-# Run Caddy
-CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]
