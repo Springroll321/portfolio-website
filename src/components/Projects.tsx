@@ -35,7 +35,7 @@ const projects: Project[] = [
   {
     title: "Vloggo Bot",
     description: "A personal vlog coordinator that keeps track of everyone in the rotation and pings the next member when it’s their time to vlog.",
-    image: "/assets/projects/vloggo.jpg",
+    image: "/assets/projects/vloggo.png",
     tags: ["Python", "Docker", "Amazon EC2"],
     github: "https://github.com/Springroll321/vloggo-bot"
   },
