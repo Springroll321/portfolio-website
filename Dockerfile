@@ -12,17 +12,13 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Serve
-FROM nginx:alpine
+FROM caddy:2-alpine
 
 # Copy the build output from the previous stage
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/caddy
 
-# Copy a custom nginx config
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Ensure the web server has read permissions for the assets
-RUN chmod -R 755 /usr/share/nginx/html/assets
+# Copy the Caddyfile
+COPY Caddyfile /etc/caddy/Caddyfile
 
 EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 443
