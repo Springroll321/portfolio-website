@@ -3,59 +3,64 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Section } from './Section';
 
+// Who I Am
+import manila from '../assets/about-me/who/manila.jpg';
+import uofm from '../assets/about-me/who/uofm.jpg';
+import winter from '../assets/about-me/who/winter.jpg';
+
+// Maker
+import crochet from '../assets/about-me/maker/crochet.jpg';
+import flower from '../assets/about-me/maker/flower.jpg';
+import sword from '../assets/about-me/maker/sword.jpg';
+
+// Gaming
+import omen from '../assets/about-me/gaming/omen.jpg';
+import pc from '../assets/about-me/gaming/pc.jpg';
+import rellana from '../assets/about-me/gaming/rellana.jpeg';
+
+// Sports
+import climb from '../assets/about-me/sports/webp/cllimb.webp';
+import drose from '../assets/about-me/sports/webp/drose.webp';
+import swimming from '../assets/about-me/sports/webp/swimming.webp';
+
+// Exploring
+import banff from '../assets/about-me/exploring/banff.jpg';
+import bridge from '../assets/about-me/exploring/bridge.jpg';
+import church from '../assets/about-me/exploring/church.jpg';
+import msc from '../assets/about-me/exploring/msc.jpg';
+import para from '../assets/about-me/exploring/para.jpg';
+import pyramid from '../assets/about-me/exploring/pyramid.jpg';
+
 const slides = [
   {
     id: 1,
     title: "Who I Am",
     description: "I'm Patrick, a recently graduated student with a passion for creating new things, whether it's a project that is tangible or written in code. I enjoy solving complex problems and the process of bringing ideas to life. I graduated in 2025 with a major in Computer Science from the University of Manitoba. I was born and raised in the tropical weather of the Philippines and later moved to Winnipeg, Manitoba in 2009 with my family. Although we have been in Canada for quite some time now, we're still learning how to survive the cold winters.",
-    images: [
-      "/assets/about-me/who/manila.jpg",
-      "/assets/about-me/who/uofm.jpg",
-      "/assets/about-me/who/winter.jpg"
-    ]
+    images: [manila, uofm, winter]
   },
   {
     id: 2,
     title: "Maker 🔨",
     description: "I am passionate about making things either through traditional crafts like woodworking and crocheting, or through digital creations such as 3D modeling and coding. I enjoy the mix of creativity, problem-solving, and experimentation that comes with any project.",
-    images: [
-      "/assets/about-me/maker/crochet.jpg",
-      "/assets/about-me/maker/flower.jpg",
-      "/assets/about-me/maker/sword.jpg"
-    ]
+    images: [crochet, flower, sword]
   },
   {
     id: 3,
     title: "Gaming 🎮",
     description: "Ever since I built my first computer, gaming has been one of my favorite ways to unwind during my free time. I mostly enjoy playing games with friends in competitive settings like NBA 2K, Valorant, and CSGO. The single player games that I have enjoyed are Soulsborne games like Dark Souls, Elden Ring and Sekiro.",
-    images: [
-      "/assets/about-me/gaming/omen.jpg",
-      "/assets/about-me/gaming/pc.jpg",
-      "/assets/about-me/gaming/rellana.jpeg"
-    ]
+    images: [omen, pc, rellana]
   },
   {
     id: 4,
     title: "Sports 🏀",
     description: "I’m adamant about staying active, whether it's playing basketball, hiking, or swimming. I've been playing basketball ever since I was a kid and it remains one of my favorite ways to stay active and have fun with friends. My favorite NBA teams to watch are currently the Los Angeles Lakers and previously the Chicago Bulls during the Derrick Rose era. More recently I have enjoyed solving boulder problems as it picks my brain while giving me a good workout",
-    images: [
-      "/assets/about-me/sports/webp/cllimb.webp",
-      "/assets/about-me/sports/webp/drose.webp",
-      "/assets/about-me/sports/webp/swimming.webp"
-    ]
+    images: [climb, drose, swimming]
   },
   {
     id: 5,
     title: "Exploring 🏞️",
     description: "I love exploring new places, whether it's hiking through nature trails, visiting historical sites, or discovering hidden gems in cities. Exploring allows me to experience different cultures, appreciate the beauty of the world, and create lasting memories. I had the privilege to travel to various places including Canada, the Philippines, the United States, Mexico, and the Caribbean.",
-    images: [
-      "/assets/about-me/exploring/banff.jpg",
-      "/assets/about-me/exploring/bridge.jpg",
-      "/assets/about-me/exploring/church.jpg",
-      "/assets/about-me/exploring/msc.jpg",
-      "/assets/about-me/exploring/para.jpg",
-      "/assets/about-me/exploring/pyramid.jpg"
-    ]
+    images: [banff, bridge, church, msc, para, pyramid]
   },
 ];
 
