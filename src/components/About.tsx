@@ -39,9 +39,9 @@ const slides = [
     title: "Sports 🏀",
     description: "I’m adamant about staying active, whether it's playing basketball, hiking, or swimming. I've been playing basketball ever since I was a kid and it remains one of my favorite ways to stay active and have fun with friends. My favorite NBA teams to watch are currently the Los Angeles Lakers and previously the Chicago Bulls during the Derrick Rose era. More recently I have enjoyed solving boulder problems as it picks my brain while giving me a good workout",
     images: [
-      "/assets/about-me/sports/webp/cllimb.webp",
-      "/assets/about-me/sports/webp/drose.webp",
-      "/assets/about-me/sports/webp/swimming.webp"
+      "/assets/about-me/sports/cllimb.png",
+      "/assets/about-me/sports/drose.jpg",
+      "/assets/about-me/sports/swimming.jpg"
     ]
   },
   {
